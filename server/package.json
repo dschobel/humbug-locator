@@ -1,0 +1,11 @@
+{
+  "name": "locator-server",
+  "description": "the backend for varick locator",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "redis"  : "0.8.x",
+    "log4js" : "0.5.x"
+  }
+}

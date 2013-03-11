@@ -1,0 +1,22 @@
+{
+    "name": "Varick Locator",
+    "version": "1.0",
+    "description": "Shows a visual overlay for humbug users physically in the Hacker School space",
+    "background": {
+        "persistent": false,
+        "scripts": [ "event.js" ]
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [ "https://humbughq.com/*" ],
+            "css": [ "humbug.css" ],
+            "js": [ "humbug.js", "underscore.js" ]
+        }
+    ],
+    "permissions": [
+        "geolocation", 
+        "http://YOUR_APP_SERVER/"
+    ],
+    "manifest_version": 2
+}
